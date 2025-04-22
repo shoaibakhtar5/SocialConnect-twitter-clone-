@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialConnect</title>
+    <link rel="icon" type="image/x-icon" href="LOGO.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <header>
+        <aside>
+            <a href="#" class="logo"><i class="fas fa-yin-yang"></i></a>
+            <ul>
+                <li><div class="li_active"> <a href="/"><i class="fas fa-house-user"></i> HOME</a></li></div>
+                <li><a href="#"><i class="fas fa-hashtag"></i> Explore</a></li>
+                <li><a href="#"><i class="far fa-bell"></i> Notification</a></li>
+                <li><a href="#"><i class="fas fa-inbox"></i> Message</a></li>
+                <li><a href="#"><i class="fas fa-bookmark"></i> Bookmark</a></li>
+                <li><a href="#"><i class="fas fa-list"></i> List</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="#"><i class="fa-solid fa-ellipsis"> </i>More</a></li>
+            </ul>
+            <button>TWEET</button>
+        </aside>
+        <section>
+            <nav> 
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+                <div class="search_bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search On SocialConnect...">
+                </div>
+                <div class="user">
+                     <h6> Hey,Shoaib Akhtar !</h6>
+                    <img src="profile.co.jpg" alt="">
+                </div>
+                    
+                
+            </nav>
+            <div class="profile_post_follow_bx">
+                <div class="profile_bx">
+                    <div class="profile_card">
+                        <img src="ok-xl.png" alt="" class="blue_tick_pc">
+                        <img src="profile.co.jpg" alt="" class="profile_img">
+                        <h5>Shoaib Akhtar</h5>
+                        <h6>@ishoaib_akhtar</h6>
+                        <address>
+                            <a href="#">
+                                
+                                <i class="fa-solid fa-location-dot"></i>
+                                Islamabad Pakstan
+
+                            </a>
+                            <a href="#">
+                               
+                                <i class="fa-solid fa-earth-asia"></i>
+                            </a>
+                        </address>
+                        <p>JUST A DUDE WITH DREAMS</p>
+                        <div class="data">  
+                            <div class="Data_card">
+                                <p>Posts</p>
+                                <h4>199</h4>
+                            </div>
+                            <div class="Data_card">
+                                <p>Followers</p>
+                                <h4>400M</h4>
+                            </div>
+                            <div class="Data_card">
+                                <p>Following</p>
+                                <h4>114</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activity_bx">
+                        <div class="activity_card_bx">
+                            <i class="fa-solid fa-eye"></i>
+                            <h6>Activity</h6>
+                        </div>
+                        <div class="activity_card_bx">
+                            <i class="fa-solid fa-bolt"></i>
+                            <h6>Moments</h6>
+                        </div>
+                        <div class="activity_card_bx">
+                            <i class="fa-solid fa-user-group"></i>
+                            <h6>Friends</h6>
+                        </div>
+                        <div class="activity_card_bx">
+                            <i class="fa-solid fa-gear"></i>
+                            <h6>Edit Profile</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="post_follow_bx">
+                    <div class="post_bx">
+                        <nav>
+                            <ul>
+                                <li> <a href="#">Tweets</a></li>
+                                <li> <a href="#">Tweets & Followers</a></li>
+                                <li> <a href="#">Media</a></li>
+                                <li> <a href="#">Likes</a></li>
+                            </ul>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </nav>
+                        <div class="post_main_bx">
+                              <!-- tweet box start -->
+                              <div class="home_page_first_bx">
+                                <img src="profile.co.jpg" alt="" class="home_profile_pic">
+                                <div class="write_tweet_bx">
+                                    <button id="audience_btn">
+                                        Everyone <i class="fas fa-angle-down"></i>
+                                    </button>
+                                    <div class="show_bx show_bx_1">
+                                        <h6>Choose audience</h6>
+                                        <li class="check_audience">
+                                          <div>
+                                            <i class="fas fa-globe-asia"></i>
+                                            <h6>Everyone</h6>
+                                           </div>
+                                           <i class="fas fa-check check_audience_i"></i>
+                                        </li>
+                                        <li class="check_audience">
+                                            <div>
+                                                <i class="fas fa-users"></i>
+                                              <div class="edit_tweet_user">
+                                                <h6>Social Circle</h6> <span>0 people</span><button>Edit</button>
+                                              </div>
+                                             </div>
+                                             <i class="fas fa-check check_audience_i"></i>
+                                          </li>
+                                        
+                                    </div>
+                                    <br>
+                                    <textarea name="" id="tweet_text_area" oninput="auto_grow(this)" maxlength="200" placeholder="What's happening?"></textarea>
+                                    <button class="select_reply_btn">
+                                         <i class="fas fa-globe-asia"></i> Everyone can reply
+                                        </button>
+                                        <div class="show_bx who_can_reply_bx">
+                                            <h6>Choose audience</h6>
+                                            <p>Choose who can reply to this tweet. <br>
+                                            Anyone mentioned can always Reply.</p>
+                                            <li class="who_can_reply">
+                                              <div>
+                                                <i class="fas fa-globe-asia"></i>
+                                                <h6>Everyone can reply</h6>
+                                               </div>
+                                               <i class="fas fa-check who_can_reply_i"></i>
+                                            </li>
+                                            <li class="who_can_reply">
+                                                <div>
+                                                    <i class="fas fa-user-check"></i>
+                                                  <h6>People you follow</h6>
+                                                 </div>
+                                                 <i class="fas fa-check who_can_reply_i"></i>
+                                              </li>
+                                              <li class="who_can_reply">
+                                                <div>
+                                                  <i style="font-style:normal"  > @</i>
+                                                  <h6>Only people you mention</h6>
+                                                 </div>
+                                                 <i class="fas fa-check who_can_reply_i"></i>
+                                              </li>
+                                          </div>
+                                          <div class="attach_media">
+                                            <div class="select_media">
+                                                <div class="media_card">
+                                                    <input type="file" name="" accept="image/jpg, image/png, image/gif, video/mp4" id="">
+                                                    <i class="fa-solid fa-image"></i>
+                                                </div>
+                                                <div class="media_card">
+                                                    <i class="fa-solid fa-gift"></i>
+                                                </div>
+                                                <div class="media_card">
+                                                    <i class="fa-solid fa-square-poll-vertical"></i>
+                                                </div>
+                                                <div class="media_card">
+                                                    <i class="fa-solid fa-face-smile"></i>
+                                                </div>
+                                                <div class="media_card">
+                                                    <i class="fa-solid fa-calendar-week"></i>
+                                                </div>
+                                                <div class="media-card">
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                </div>
+                                            </div>
+                                            <div class="tweet_letter_count">
+                                              <h6 id="text_limit">100%</h6>
+                                              <button id="tweet_post">Tweet</button>
+                                            </div>
+                                          </div>
+                                </div>
+                              </div>
+                              <div class="post_card_bx">
+                                <div class="post_profile">
+                                    <img src="profile.co.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h6 class="Retweet"><i class="fa-solid fa-repeat"></i> Andrew Tate Retweeted</h6>
+                                    <div class="user_name_time">
+                                    <h5>Shoaib Akhtar <img src="check (1).png" alt=""><p>@ishoaib_akhtar</p></h5>
+                                    <h6><i class="fas fa-clock"></i>35 mins</h6>
+                                </div>
+                                <h3>From the River to the Sea,<br> PALESTINE will be FREE ; INSHALLAH </h3>
+                                <div class="retweet_content_bx">
+                                    <div class="user_name_time">
+                                        <h5> <img src="profile.co.jpg" alt=""> Shoaib Akhtar <img src="check (1).png" alt=""><p>@ishoaib_akhtar</p></h5>
+                                        <h6><i class="fas fa-clock"></i>3 hours</h6>
+                                    </div>
+                                    <h3>FREE PALESTINE<br> #GAZA </h3>
+                                    <div class="image_post_bx">
+                                        <img src="PALESTINE.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tweet_card_social_data">
+                                    <div class="tweet_social_card">
+                                        <i class="far fa-comment"></i>
+                                        <span>466</span>
+                                      
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fas fa-retweet"></i>
+                                        <span>65k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <span>712k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="post_card_bx">
+                                <div class="post_profile">
+                                    <img src="profile.co.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <h6 class="Retweet"><i class="fa-solid fa-repeat"></i>MO SALAH Retweeted</h6>
+                                    <div class="user_name_time">
+                                    <h5>Shoaib Akhtar <img src="check (1).png" alt=""><p>@ishoaib_akhtar</p></h5>
+                                    <h6><i class="fas fa-clock"></i>1 hour</h6>
+                                </div>
+                                <h3>What a Game by Liverpool... #YNWA </h3>
+                                <div class="retweet_content_bx">
+                                    <div class="user_name_time">
+                                        <h5> <img src="liverpool.png" alt=""> LiverpoolFC <img src="check (1).png" alt=""><p>@LiverpoolFC</p></h5>
+                                        <h6><i class="fas fa-clock"></i>2 hours</h6>
+                                    </div>
+                                    <h3>Liverpool beat Arsenal.<br> 4-0 <br> #YNWA </h3>
+                                    <div class="image_post_bx">
+                                        <img src="won.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tweet_card_social_data">
+                                    <div class="tweet_social_card">
+                                        <i class="far fa-comment"></i>
+                                        <span>38</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fas fa-retweet"></i>
+                                        <span>777</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <span>754k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="post_card_bx">
+                                <div class="post_profile">
+                                    <img src="profile.co.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    
+                                    <div class="user_name_time">
+                                    <h5>Shoaib Akhtar <img src="check (1).png" alt=""><p>@ishoaib_akhtar</p></h5>
+                                    <h6><i class="fas fa-clock"></i>5 hours</h6>
+                                </div>
+                                <h3> Guys! I love Arts....</h3>
+                                <div class="image_post_bx">
+                                    <img src="post.jpg" alt="">
+                                </div>
+                               
+                                <div class="tweet_card_social_data">
+                                    <div class="tweet_social_card">
+                                        <i class="far fa-comment"></i>
+                                        <span>1k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fas fa-retweet"></i>
+                                        <span>1.3k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <span>354k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="post_card_bx">
+                                <div class="post_profile">
+                                    <img src="liverpool.png" alt="">
+                                </div>
+                                <div class="content">
+                                    
+                                    <div class="user_name_time">
+                                    <h5>LiverpoolFC <img src="check (1).png" alt=""><p>@LiverpoolFC</p></h5>
+                                    <h6><i class="fas fa-clock"></i>1 Day</h6>
+                                </div>
+                                <h3> Goaaaaaaaalllllllll... <br> What a screamer from Trent Alexander Arnold</h3>
+                                <div class="image_post_bx">
+                                    <img src="trent.webp" alt="">
+                                </div>
+                               
+                                <div class="tweet_card_social_data">
+                                    <div class="tweet_social_card">
+                                        <i class="far fa-comment"></i>
+                                        <span>1.3k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fas fa-retweet"></i>
+                                        <span>2k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <span>225k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="post_card_bx">
+                                <div class="post_profile">
+                                    <img src="topg P.jpeg " alt="">
+                                </div>
+                                <div class="content">
+                                    
+                                    <div class="user_name_time">
+                                    <h5>Andrew Tate <img src="check (1).png" alt=""><p>@TopG</p></h5>
+                                    <h6><i class="fas fa-clock"></i>1 Day</h6>
+                                </div>
+                                <h3> “Do the impossible and you'll never doubt yourself ever again.</h3>
+                                <div class="image_post_bx">
+                                    <img src="TopG Post.webp" alt="">
+                                </div>
+                               
+                                <div class="tweet_card_social_data">
+                                    <div class="tweet_social_card">
+                                        <i class="far fa-comment"></i>
+                                        <span>15.5k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fas fa-retweet"></i>
+                                        <span>8k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <span>925k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="post_card_bx">
+                                <div class="post_profile">
+                                    <img src="elon.jpeg" alt="">
+                                </div>
+                                <div class="content">
+                                    
+                                    <div class="user_name_time">
+                                    <h5>Elon Musk <img src="check (1).png" alt=""><p>@TheRealElon</p></h5>
+                                    <h6><i class="fas fa-clock"></i>4 Days</h6>
+                                </div>
+                                <h3> Guys I am Thinking about buying SocialConnect aswell.....LMAO</h3>
+                                <div class="image_post_bx">
+                                    <img src="elon post.jpeg" alt="">
+                                </div>
+                               
+                                <div class="tweet_card_social_data">
+                                    <div class="tweet_social_card">
+                                        <i class="far fa-comment"></i>
+                                        <span>21.5k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fas fa-retweet"></i>
+                                        <span>18k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <span>10.5M</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="post_card_bx">
+                                <div class="post_profile">
+                                    <img src="topg P.jpeg " alt="">
+                                </div>
+                                <div class="content">
+                                    
+                                    <div class="user_name_time">
+                                    <h5>Andrew Tate <img src="check (1).png" alt=""><p>@TopG</p></h5>
+                                    <h6><i class="fas fa-clock"></i>7 Days</h6>
+                                </div>
+                                <h3> BREATH AIR </h3>
+                                
+                               
+                                <div class="tweet_card_social_data">
+                                    <div class="tweet_social_card">
+                                        <i class="far fa-comment"></i>
+                                        <span>12.5k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fas fa-retweet"></i>
+                                        <span>5k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <span>123k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="post_card_bx">
+                                <div class="post_profile">
+                                    <img src="imran p.jpeg" alt="">
+                                </div>
+                                <div class="content">
+                                    
+                                    <div class="user_name_time">
+                                    <h5>IMRAN KHAN <img src="check (1).png" alt=""><p>@imrankhanpti</p></h5>
+                                    <h6><i class="fas fa-clock"></i>1 Day</h6>
+                                </div>
+                                <h3> إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</h3>
+                                <div class="image_post_bx">
+                                    <img src="imran post.jpg" alt="">
+                                </div>
+                               
+                                <div class="tweet_card_social_data">
+                                    <div class="tweet_social_card">
+                                        <i class="far fa-comment"></i>
+                                        <span>199k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fas fa-retweet"></i>
+                                        <span>12k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <span>2.7M</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="post_card_bx">
+                                <div class="post_profile">
+                                    <img src="profile.co.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    
+                                    <div class="user_name_time">
+                                    <h5>Shoaib Akhtar <img src="check (1).png" alt=""><p>@ishoaib_akhtar</p></h5>
+                                    <h6><i class="fas fa-clock"></i>10 Days</h6>
+                                </div>
+                                <h3> نَصْرٌ مِّن اللَّهِ وَفَتْحٌ قَرِيبٌ </h3>
+                                <div class="image_post_bx">
+                                    <img src="shoaib post.jpg" alt="">
+                                </div>
+                               
+                                <div class="tweet_card_social_data">
+                                    <div class="tweet_social_card">
+                                        <i class="far fa-comment"></i>
+                                        <span>149k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fas fa-retweet"></i>
+                                        <span>11k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fa-solid fa-heart"></i>
+                                        <span>222k</span>
+                                    </div>
+                                    <div class="tweet_social_card">
+                                        <i class="fa-solid fa-share"></i>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="follow_bx">
+                        <div class="trend_for_you">
+                            <nav> 
+                                <h6>Trends for You</h6>
+                                <i class="fa-solid fa-gear"></i>
+                            </nav>
+                            <div class="trend_bx">
+                                <div class="rate">
+                                    <li>
+                                        <a href="#">#MoSalah <br> <p>100k Tweets</p></a><i class="fa-solid fa-chevron-down"></i></li>
+                                        <div class="interest"> 
+                                            <button><div class="smile"></div> <i class="fa-solid fa-face-smile"></i>interested</button>
+                                            <button><div class="frown"></div><i class="fa-solid fa-face-frown"></i>Not interested</button>
+                                        </div>
+                                </div>
+                                <div class="rate">
+                                    <li>
+                                        <a href="#">#ImranKhan <br> <p>230k Tweets</p></a><i class="fa-solid fa-chevron-down"></i></li>
+                                        <div class="interest"> 
+                                            <button><div class="smile"></div> <i class="fa-solid fa-face-smile"></i>interested</button>
+                                            <button><div class="frown"></div><i class="fa-solid fa-face-frown"></i>Not interested</button>
+                                        </div>
+                                </div>
+                                <div class="rate">
+                                    <li>
+                                        <a href="#">#Babarazam <br> <p>130k Tweets</p></a><i class="fa-solid fa-chevron-down"></i></li>
+                                        <div class="interest"> 
+                                            <button><div class="smile"></div> <i class="fa-solid fa-face-smile"></i>interested</button>
+                                            <button><div class="frown"></div><i class="fa-solid fa-face-frown"></i>Not interested</button>
+                                        </div>
+                                </div>
+                                <div class="rate">
+                                    <li>
+                                        <a href="#">#NawazSharifChor <br> <p>160k Tweets</p></a><i class="fa-solid fa-chevron-down"></i></li>
+                                        <div class="interest"> 
+                                            <button><div class="smile"></div> <i class="fa-solid fa-face-smile"></i>interested</button>
+                                            <button><div class="frown"></div><i class="fa-solid fa-face-frown"></i>Not interested</button>
+                                        </div>
+                                </div>
+                                <button><div class="see_more">SEE MORE</div></button>
+                            </div>
+                            
+                        </div>
+                        <div class="you_should_follow trend_for_you">
+                            <nav> 
+                                <h6>You Should Follow</h6>
+                                <i class="fa-solid fa-arrows-rotate"></i>
+                            </nav>
+                            <div class="follow_bx">
+                                <div class="follow_profile_name">
+                                    <img src="shahid.jpeg" alt="" class="follow_profile">
+                                   <div class="user_name">
+                                        <div class="user_name_follow"><h6>Shahid Afridi</h6><img src="check (1).png" alt=""></div>
+                                        <p>@shahidafridi</p> 
+                                    </div> 
+                                </div>
+                                <button>Follow</button>
+                            </div>
+                            <div class="follow_bx">
+                                <div class="follow_profile_name">
+                                    <img src="trump.webp" alt="" class="follow_profile">
+                                   <div class="user_name">
+                                        <div class="user_name_follow"><h6>Donald Trump</h6><img src="check (1).png" alt=""></div>
+                                        <p>@Thedonaltrump</p> 
+                                    </div> 
+                                </div>
+                                <button>Follow</button>
+                            </div>
+                            <div class="follow_bx">
+                                <div class="follow_profile_name">
+                                    <img src="burj.jpeg" alt="" class="follow_profile">
+                                   <div class="user_name">
+                                        <div class="user_name_follow"><h6>Burj Khalifa</h6><img src="check (1).png" alt=""></div>
+                                        <p>@BurjKhalifa</p> 
+                                    </div> 
+                                </div>
+                                <button>Follow</button>
+                            </div>
+                            <div class="follow_bx">
+                                <div class="follow_profile_name">
+                                    <img src="sir.jpeg" alt="" class="follow_profile">
+                                   <div class="user_name">
+                                        <div class="user_name_follow"><h6>Amir Sohail</h6><img src="check (1).png" alt=""></div>
+                                        <p>@EngrAmirSohail</p> 
+                                    </div> 
+                                </div>
+                                <button>Follow</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>   
+    <script src="app.js"></script>
+    
+</body>
+</html>
